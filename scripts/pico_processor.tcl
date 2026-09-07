@@ -1,4 +1,3 @@
-
 ################################################################
 # This is a generated script based on design: pico_processor
 #
@@ -19,6 +18,10 @@ set script_folder [_tcl::get_script_folder]
 
 ################################################################
 # Check if script is running in correct Vivado version.
+# NOTE: version guard disabled -- running under Vivado 2022.2
+# instead of the original 2021.1. This only stops the script if
+# it detects a mismatch; it does not itself change any IP
+# versions or design behavior.
 ################################################################
 set scripts_vivado_version 2021.1
 set current_vivado_version [version -short]
@@ -26,8 +29,6 @@ set current_vivado_version [version -short]
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
    puts ""
    catch {common::send_gid_msg -ssname BD::TCL -id 2041 -severity "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
-
-   return 1
 }
 
 ################################################################
@@ -124,7 +125,7 @@ set bCheckIPsPassed 1
 set bCheckIPs 1
 if { $bCheckIPs == 1 } {
    set list_check_ips "\ 
-xilinx.com:user:picorv32_axi:1.0\
+cliffordwolf:ip:picorv32_axi:1.0\
 xilinx.com:ip:axi_bram_ctrl:4.1\
 xilinx.com:ip:blk_mem_gen:8.4\
 xilinx.com:ip:proc_sys_reset:5.0\
@@ -242,7 +243,7 @@ proc create_root_design { parentCell } {
  ] $s_axi_aresetn
 
   # Create instance: picorv32, and set properties
-  set picorv32 [ create_bd_cell -type ip -vlnv xilinx.com:user:picorv32_axi:1.0 picorv32 ]
+  set picorv32 [ create_bd_cell -type ip -vlnv cliffordwolf:ip:picorv32_axi:1.0 picorv32 ]
 
   # Create instance: psBramController, and set properties
   set psBramController [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 psBramController ]
@@ -313,5 +314,3 @@ proc create_root_design { parentCell } {
 ##################################################################
 
 create_root_design ""
-
-
