@@ -37,11 +37,11 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 # source design_1_script.tcl
 
 
-# The design that will be created by this Tcl script contains the following 
-# block design container source references:
-# pico_processor
-
-# Please add the sources before sourcing this Tcl script.
+# pico_processor is instantiated below as a plain hierarchy (-type hier),
+# populated inline by create_hier_cell_pico_processor_0. It was previously
+# a Block Design Container reference to a separate pico_processor.bd; that
+# produced a hwh MODULE entry with no VLNV and no flattened internal IP,
+# which PYNQ's hwh_parser cannot resolve into a RISC-V processor hierarchy.
 
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
@@ -156,40 +156,30 @@ xilinx.com:ip:clk_wiz:6.0\
 }
 
 ##################################################################
-# CHECK Block Design Container Sources
+# CHECK IPs (pico_processor internals -- inlined as a hierarchy below,
+# no longer resolved via a separate Block Design Container source)
 ##################################################################
-set bCheckSources 1
-set list_bdc_active "pico_processor"
-
-array set map_bdc_missing {}
-set map_bdc_missing(ACTIVE) ""
-set map_bdc_missing(BDC) ""
-
-if { $bCheckSources == 1 } {
-   set list_check_srcs "\ 
-pico_processor \
+if { $bCheckIPs == 1 } {
+   set list_check_ips "\
+cliffordwolf:ip:picorv32_axi:1.0\
+xilinx.com:ip:axi_bram_ctrl:4.1\
+xilinx.com:ip:blk_mem_gen:8.4\
+xilinx.com:ip:proc_sys_reset:5.0\
 "
 
-   common::send_gid_msg -ssname BD::TCL -id 2056 -severity "INFO" "Checking if the following sources for block design container exist in the project: $list_check_srcs .\n\n"
+   set list_ips_missing ""
+   common::send_gid_msg -ssname BD::TCL -id 2011 -severity "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
 
-   foreach src $list_check_srcs {
-      if { [can_resolve_reference $src] == 0 } {
-         if { [lsearch $list_bdc_active $src] != -1 } {
-            set map_bdc_missing(ACTIVE) "$map_bdc_missing(ACTIVE) $src"
-         } else {
-            set map_bdc_missing(BDC) "$map_bdc_missing(BDC) $src"
-         }
+   foreach ip_vlnv $list_check_ips {
+      set ip_obj [get_ipdefs -all $ip_vlnv]
+      if { $ip_obj eq "" } {
+         lappend list_ips_missing $ip_vlnv
       }
    }
 
-   if { [llength $map_bdc_missing(ACTIVE)] > 0 } {
-      catch {common::send_gid_msg -ssname BD::TCL -id 2057 -severity "ERROR" "The following source(s) of Active variants are not found in the project: $map_bdc_missing(ACTIVE)" }
-      common::send_gid_msg -ssname BD::TCL -id 2060 -severity "INFO" "Please add source files for the missing source(s) above."
+   if { $list_ips_missing ne "" } {
+      catch {common::send_gid_msg -ssname BD::TCL -id 2012 -severity "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
       set bCheckIPsPassed 0
-   }
-   if { [llength $map_bdc_missing(BDC)] > 0 } {
-      catch {common::send_gid_msg -ssname BD::TCL -id 2059 -severity "WARNING" "The following source(s) of variants are not found in the project: $map_bdc_missing(BDC)" }
-      common::send_gid_msg -ssname BD::TCL -id 2060 -severity "INFO" "Please add source files for the missing source(s) above."
    }
 }
 
@@ -202,6 +192,124 @@ if { $bCheckIPsPassed != 1 } {
 # DESIGN PROCs
 ##################################################################
 
+
+
+# Procedure to create the pico_processor hierarchy. This replaces what was
+# previously a Block Design Container reference to a separate pico_processor
+# .bd (built by pico_processor.tcl) -- the contents below are that same
+# design (picorv32 + psBramController + riscvBram + riscvBramController +
+# riscvReset, identical VLNVs/CONFIGs/connections), instantiated inline as a
+# plain hierarchy so its internals are flattened into design_1's own .hwh.
+#
+# Boundary port names (S_AXI_MEM, irq, por_resetn, riscv_clk, riscv_resetn,
+# s_axi_aclk, s_axi_aresetn) are unchanged from the container version, so
+# every reference to pico_processor_0/<name> in create_root_design below
+# still resolves the same way -- no outer wiring changes needed.
+proc create_hier_cell_pico_processor_0 { parentCell nameHier } {
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2092 -severity "ERROR" "create_hier_cell_pico_processor_0() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2090 -severity "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2091 -severity "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+  set S_AXI_MEM [ create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S_AXI_MEM ]
+
+  # Create pins
+  # (create_bd_pin has no -freq_hz option -- unlike create_bd_port, clock
+  # frequency on a pin is inferred from whatever net it ends up connected
+  # to, so it's simply omitted here.)
+  create_bd_pin -dir O irq
+  create_bd_pin -dir I -type rst por_resetn
+  create_bd_pin -dir I -type clk riscv_clk
+  create_bd_pin -dir I -type rst riscv_resetn
+  create_bd_pin -dir I -type clk s_axi_aclk
+  create_bd_pin -dir I -type rst s_axi_aresetn
+
+  # Create instance: picorv32, and set properties
+  set picorv32 [ create_bd_cell -type ip -vlnv cliffordwolf:ip:picorv32_axi:1.0 picorv32 ]
+
+  # Create instance: psBramController, and set properties
+  set psBramController [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 psBramController ]
+  set_property -dict [ list \
+   CONFIG.ECC_TYPE {0} \
+   CONFIG.SINGLE_PORT_BRAM {1} \
+   CONFIG.USE_ECC {0} \
+ ] $psBramController
+
+  # Create instance: riscvBram, and set properties
+  set riscvBram [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 riscvBram ]
+  set_property -dict [ list \
+   CONFIG.EN_SAFETY_CKT {false} \
+   CONFIG.Enable_B {Use_ENB_Pin} \
+   CONFIG.Memory_Type {True_Dual_Port_RAM} \
+   CONFIG.Port_B_Clock {100} \
+   CONFIG.Port_B_Enable_Rate {100} \
+   CONFIG.Port_B_Write_Rate {50} \
+   CONFIG.Use_RSTB_Pin {true} \
+ ] $riscvBram
+
+  # Create instance: riscvBramController, and set properties
+  set riscvBramController [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 riscvBramController ]
+  set_property -dict [ list \
+   CONFIG.ECC_TYPE {0} \
+   CONFIG.PROTOCOL {AXI4LITE} \
+   CONFIG.SINGLE_PORT_BRAM {1} \
+ ] $riscvBramController
+
+  # Create instance: riscvReset, and set properties
+  set riscvReset [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 riscvReset ]
+  set_property -dict [ list \
+   CONFIG.C_AUX_RST_WIDTH {1} \
+   CONFIG.C_EXT_RST_WIDTH {1} \
+ ] $riscvReset
+
+  # Create interface connections
+  connect_bd_intf_net -intf_net Conn2 [get_bd_intf_pins S_AXI_MEM] [get_bd_intf_pins psBramController/S_AXI]
+  connect_bd_intf_net -intf_net picorv32_mem_axi [get_bd_intf_pins picorv32/mem_axi] [get_bd_intf_pins riscvBramController/S_AXI]
+  connect_bd_intf_net -intf_net psBramController_BRAM_PORTA [get_bd_intf_pins psBramController/BRAM_PORTA] [get_bd_intf_pins riscvBram/BRAM_PORTB]
+  connect_bd_intf_net -intf_net riscvBramController_BRAM_PORTA [get_bd_intf_pins riscvBram/BRAM_PORTA] [get_bd_intf_pins riscvBramController/BRAM_PORTA]
+
+  # Create port connections
+  connect_bd_net -net aux_reset_in_1 [get_bd_pins riscv_resetn] [get_bd_pins riscvReset/aux_reset_in]
+  connect_bd_net -net clk_in1_1 [get_bd_pins s_axi_aclk] [get_bd_pins psBramController/s_axi_aclk]
+  connect_bd_net -net ext_reset_in_1 [get_bd_pins por_resetn] [get_bd_pins riscvReset/ext_reset_in]
+  connect_bd_net -net picorv32_axi_0_trap [get_bd_pins irq] [get_bd_pins picorv32/trap]
+  connect_bd_net -net riscvReset_peripheral_aresetn [get_bd_pins picorv32/resetn] [get_bd_pins riscvBramController/s_axi_aresetn] [get_bd_pins riscvReset/peripheral_aresetn]
+  connect_bd_net -net riscv_clk_1subprocessorClk [get_bd_pins riscv_clk] [get_bd_pins picorv32/clk] [get_bd_pins riscvBramController/s_axi_aclk] [get_bd_pins riscvReset/slowest_sync_clk]
+  connect_bd_net -net s_axi_aresetn_1 [get_bd_pins s_axi_aresetn] [get_bd_pins psBramController/s_axi_aresetn]
+
+  # Create address segments
+  assign_bd_address -offset 0xC0000000 -range 0x00002000 -target_address_space [get_bd_addr_spaces picorv32/mem_axi] [get_bd_addr_segs riscvBramController/S_AXI/Mem0] -force
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+# End of create_hier_cell_pico_processor_0()
 
 
 # Procedure to create entire design; Provide argument to make
@@ -260,16 +368,11 @@ proc create_root_design { parentCell } {
    CONFIG.NUM_PORTS {1} \
  ] $irqConcat
 
-  # Create instance: pico_processor_0, and set properties
-  set pico_processor_0 [ create_bd_cell -type container -reference pico_processor pico_processor_0 ]
-  set_property -dict [ list \
-   CONFIG.ACTIVE_SIM_BD {pico_processor.bd} \
-   CONFIG.ACTIVE_SYNTH_BD {pico_processor.bd} \
-   CONFIG.ENABLE_DFX {0} \
-   CONFIG.LIST_SIM_BD {pico_processor.bd} \
-   CONFIG.LIST_SYNTH_BD {pico_processor.bd} \
-   CONFIG.LOCK_PROPAGATE {0} \
- ] $pico_processor_0
+  # Create instance: pico_processor_0 (plain hierarchy, populated by
+  # create_hier_cell_pico_processor_0 -- was a Block Design Container
+  # reference to pico_processor.bd)
+  create_hier_cell_pico_processor_0 [current_bd_instance .] pico_processor_0
+  set pico_processor_0 [get_bd_cells pico_processor_0]
 
   # Create instance: porReset, and set properties
   set porReset [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 porReset ]
