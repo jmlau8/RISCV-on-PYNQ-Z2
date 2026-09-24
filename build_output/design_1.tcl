@@ -39,10 +39,10 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 
 # The design that will be created by this Tcl script contains the following 
-# block design container source references:
-# pico_processor
+# module references:
+# capture_snapshot
 
-# Please add the sources before sourcing this Tcl script.
+# Please add the sources of those modules before sourcing this Tcl script.
 
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
@@ -130,12 +130,16 @@ set bCheckIPsPassed 1
 set bCheckIPs 1
 if { $bCheckIPs == 1 } {
    set list_check_ips "\ 
+xilinx.com:ip:axi_gpio:2.0\
 xilinx.com:ip:xlconcat:2.1\
 xilinx.com:ip:proc_sys_reset:5.0\
 xilinx.com:ip:processing_system7:5.5\
 xilinx.com:ip:axi_intc:4.1\
 xilinx.com:ip:xlslice:1.0\
 xilinx.com:ip:clk_wiz:6.0\
+cliffordwolf:ip:picorv32_axi:1.0\
+xilinx.com:ip:axi_bram_ctrl:4.1\
+xilinx.com:ip:blk_mem_gen:8.4\
 "
 
    set list_ips_missing ""
@@ -156,40 +160,27 @@ xilinx.com:ip:clk_wiz:6.0\
 }
 
 ##################################################################
-# CHECK Block Design Container Sources
+# CHECK Modules
 ##################################################################
-set bCheckSources 1
-set list_bdc_active "pico_processor"
-
-array set map_bdc_missing {}
-set map_bdc_missing(ACTIVE) ""
-set map_bdc_missing(BDC) ""
-
-if { $bCheckSources == 1 } {
-   set list_check_srcs "\ 
-pico_processor \
+set bCheckModules 1
+if { $bCheckModules == 1 } {
+   set list_check_mods "\ 
+capture_snapshot\
 "
 
-   common::send_gid_msg -ssname BD::TCL -id 2056 -severity "INFO" "Checking if the following sources for block design container exist in the project: $list_check_srcs .\n\n"
+   set list_mods_missing ""
+   common::send_gid_msg -ssname BD::TCL -id 2020 -severity "INFO" "Checking if the following modules exist in the project's sources: $list_check_mods ."
 
-   foreach src $list_check_srcs {
-      if { [can_resolve_reference $src] == 0 } {
-         if { [lsearch $list_bdc_active $src] != -1 } {
-            set map_bdc_missing(ACTIVE) "$map_bdc_missing(ACTIVE) $src"
-         } else {
-            set map_bdc_missing(BDC) "$map_bdc_missing(BDC) $src"
-         }
+   foreach mod_vlnv $list_check_mods {
+      if { [can_resolve_reference $mod_vlnv] == 0 } {
+         lappend list_mods_missing $mod_vlnv
       }
    }
 
-   if { [llength $map_bdc_missing(ACTIVE)] > 0 } {
-      catch {common::send_gid_msg -ssname BD::TCL -id 2057 -severity "ERROR" "The following source(s) of Active variants are not found in the project: $map_bdc_missing(ACTIVE)" }
-      common::send_gid_msg -ssname BD::TCL -id 2060 -severity "INFO" "Please add source files for the missing source(s) above."
+   if { $list_mods_missing ne "" } {
+      catch {common::send_gid_msg -ssname BD::TCL -id 2021 -severity "ERROR" "The following module(s) are not found in the project: $list_mods_missing" }
+      common::send_gid_msg -ssname BD::TCL -id 2022 -severity "INFO" "Please add source files for the missing module(s) above."
       set bCheckIPsPassed 0
-   }
-   if { [llength $map_bdc_missing(BDC)] > 0 } {
-      catch {common::send_gid_msg -ssname BD::TCL -id 2059 -severity "WARNING" "The following source(s) of variants are not found in the project: $map_bdc_missing(BDC)" }
-      common::send_gid_msg -ssname BD::TCL -id 2060 -severity "INFO" "Please add source files for the missing source(s) above."
    }
 }
 
@@ -202,6 +193,112 @@ if { $bCheckIPsPassed != 1 } {
 # DESIGN PROCs
 ##################################################################
 
+
+# Hierarchical cell: pico_processor_0
+proc create_hier_cell_pico_processor_0 { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2092 -severity "ERROR" "create_hier_cell_pico_processor_0() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2090 -severity "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2091 -severity "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+  create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S_AXI_MEM
+
+
+  # Create pins
+  create_bd_pin -dir O irq
+  create_bd_pin -dir O -from 0 -to 0 -type rst peripheral_aresetn
+  create_bd_pin -dir I -type rst por_resetn
+  create_bd_pin -dir I -type clk riscv_clk
+  create_bd_pin -dir I -type rst riscv_resetn
+  create_bd_pin -dir I -type clk s_axi_aclk
+  create_bd_pin -dir I -type rst s_axi_aresetn
+
+  # Create instance: picorv32, and set properties
+  set picorv32 [ create_bd_cell -type ip -vlnv cliffordwolf:ip:picorv32_axi:1.0 picorv32 ]
+
+  # Create instance: psBramController, and set properties
+  set psBramController [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 psBramController ]
+  set_property -dict [list \
+    CONFIG.SINGLE_PORT_BRAM {1} \
+    CONFIG.USE_ECC {0} \
+  ] $psBramController
+
+
+  # Create instance: riscvBram, and set properties
+  set riscvBram [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 riscvBram ]
+  set_property -dict [list \
+    CONFIG.EN_SAFETY_CKT {false} \
+    CONFIG.Enable_B {Use_ENB_Pin} \
+    CONFIG.Memory_Type {True_Dual_Port_RAM} \
+    CONFIG.Port_B_Clock {100} \
+    CONFIG.Port_B_Enable_Rate {100} \
+    CONFIG.Port_B_Write_Rate {50} \
+    CONFIG.Use_RSTB_Pin {true} \
+  ] $riscvBram
+
+
+  # Create instance: riscvBramController, and set properties
+  set riscvBramController [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 riscvBramController ]
+  set_property -dict [list \
+    CONFIG.PROTOCOL {AXI4LITE} \
+    CONFIG.SINGLE_PORT_BRAM {1} \
+  ] $riscvBramController
+
+
+  # Create instance: riscvReset, and set properties
+  set riscvReset [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 riscvReset ]
+  set_property -dict [list \
+    CONFIG.C_AUX_RST_WIDTH {1} \
+    CONFIG.C_EXT_RST_WIDTH {1} \
+  ] $riscvReset
+
+
+  # Create interface connections
+  connect_bd_intf_net -intf_net Conn2 [get_bd_intf_pins S_AXI_MEM] [get_bd_intf_pins psBramController/S_AXI]
+  connect_bd_intf_net -intf_net picorv32_mem_axi [get_bd_intf_pins picorv32/mem_axi] [get_bd_intf_pins riscvBramController/S_AXI]
+  connect_bd_intf_net -intf_net psBramController_BRAM_PORTA [get_bd_intf_pins psBramController/BRAM_PORTA] [get_bd_intf_pins riscvBram/BRAM_PORTB]
+  connect_bd_intf_net -intf_net riscvBramController_BRAM_PORTA [get_bd_intf_pins riscvBram/BRAM_PORTA] [get_bd_intf_pins riscvBramController/BRAM_PORTA]
+
+  # Create port connections
+  connect_bd_net -net aux_reset_in_1 [get_bd_pins riscv_resetn] [get_bd_pins riscvReset/aux_reset_in]
+  connect_bd_net -net clk_in1_1 [get_bd_pins s_axi_aclk] [get_bd_pins psBramController/s_axi_aclk]
+  connect_bd_net -net ext_reset_in_1 [get_bd_pins por_resetn] [get_bd_pins riscvReset/ext_reset_in]
+  connect_bd_net -net picorv32_axi_0_trap [get_bd_pins irq] [get_bd_pins picorv32/trap]
+  connect_bd_net -net riscvReset_peripheral_aresetn [get_bd_pins peripheral_aresetn] [get_bd_pins picorv32/resetn] [get_bd_pins riscvBramController/s_axi_aresetn] [get_bd_pins riscvReset/peripheral_aresetn]
+  connect_bd_net -net riscv_clk_1subprocessorClk [get_bd_pins riscv_clk] [get_bd_pins picorv32/clk] [get_bd_pins riscvBramController/s_axi_aclk] [get_bd_pins riscvReset/slowest_sync_clk]
+  connect_bd_net -net s_axi_aresetn_1 [get_bd_pins s_axi_aresetn] [get_bd_pins psBramController/s_axi_aresetn]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
 
 
 # Procedure to create entire design; Provide argument to make
@@ -245,31 +342,43 @@ proc create_root_design { parentCell } {
 
   set arduino_iic [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 arduino_iic ]
 
+  set gpio_rtl_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_0 ]
+
   set pmoda_gpio [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 pmoda_gpio ]
 
   set pmodb_gpio [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 pmodb_gpio ]
 
 
   # Create ports
-  set led_o [ create_bd_port -dir O -from 3 -to 0 led_o ]
+  set cap_led_o [ create_bd_port -dir O cap_led_o ]
   set pb_i [ create_bd_port -dir I -from 3 -to 0 pb_i ]
 
+  # Create instance: axi_gpio_0, and set properties
+  set axi_gpio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 ]
+  set_property -dict [list \
+    CONFIG.C_ALL_OUTPUTS {1} \
+    CONFIG.C_GPIO_WIDTH {2} \
+  ] $axi_gpio_0
+
+
+  # Create instance: capture_snapshot_0, and set properties
+  set block_name capture_snapshot
+  set block_cell_name capture_snapshot_0
+  if { [catch {set capture_snapshot_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $capture_snapshot_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: irqConcat, and set properties
   set irqConcat [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 irqConcat ]
   set_property CONFIG.NUM_PORTS {1} $irqConcat
 
 
-  # Create instance: pico_processor_0, and set properties
-  set pico_processor_0 [ create_bd_cell -type container -reference pico_processor pico_processor_0 ]
-  set_property -dict [list \
-    CONFIG.ACTIVE_SIM_BD {pico_processor.bd} \
-    CONFIG.ACTIVE_SYNTH_BD {pico_processor.bd} \
-    CONFIG.ENABLE_DFX {0} \
-    CONFIG.LIST_SIM_BD {pico_processor.bd} \
-    CONFIG.LIST_SYNTH_BD {pico_processor.bd} \
-    CONFIG.LOCK_PROPAGATE {0} \
-  ] $pico_processor_0
-
+  # Create instance: pico_processor_0
+  create_hier_cell_pico_processor_0 [current_bd_instance .] pico_processor_0
 
   # Create instance: porReset, and set properties
   set porReset [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 porReset ]
@@ -809,7 +918,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: psAxiInterconnect, and set properties
   set psAxiInterconnect [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 psAxiInterconnect ]
-  set_property CONFIG.NUM_MI {3} $psAxiInterconnect
+  set_property CONFIG.NUM_MI {4} $psAxiInterconnect
 
 
   # Create instance: psInterruptController, and set properties
@@ -852,18 +961,32 @@ proc create_root_design { parentCell } {
   ] $subprocessorClk
 
 
+  # Create instance: xlslice_0, and set properties
+  set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
+  set_property -dict [list \
+    CONFIG.DIN_FROM {1} \
+    CONFIG.DIN_TO {1} \
+    CONFIG.DIN_WIDTH {2} \
+  ] $xlslice_0
+
+
   # Create interface connections
   connect_bd_intf_net -intf_net S_AXI_MEM [get_bd_intf_pins pico_processor_0/S_AXI_MEM] [get_bd_intf_pins psAxiInterconnect/M02_AXI]
   connect_bd_intf_net -intf_net S_AXI_PSX [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins psAxiInterconnect/S00_AXI]
+  connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports gpio_rtl_0] [get_bd_intf_pins axi_gpio_0/GPIO]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net psAxiInterconnect_M00_AXI [get_bd_intf_pins psAxiInterconnect/M00_AXI] [get_bd_intf_pins psInterruptController/s_axi]
   connect_bd_intf_net -intf_net psAxiInterconnect_M01_AXI [get_bd_intf_pins psAxiInterconnect/M01_AXI] [get_bd_intf_pins subprocessorClk/s_axi_lite]
+  connect_bd_intf_net -intf_net psAxiInterconnect_M03_AXI [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins psAxiInterconnect/M03_AXI]
 
   # Create port connections
-  connect_bd_net -net FCLK_CLK0 [get_bd_pins pico_processor_0/s_axi_aclk] [get_bd_pins porReset/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins psAxiInterconnect/ACLK] [get_bd_pins psAxiInterconnect/M00_ACLK] [get_bd_pins psAxiInterconnect/M01_ACLK] [get_bd_pins psAxiInterconnect/M02_ACLK] [get_bd_pins psAxiInterconnect/S00_ACLK] [get_bd_pins psInterruptController/s_axi_aclk] [get_bd_pins subprocessorClk/clk_in1] [get_bd_pins subprocessorClk/s_axi_aclk]
+  connect_bd_net -net FCLK_CLK0 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins pico_processor_0/s_axi_aclk] [get_bd_pins porReset/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins psAxiInterconnect/ACLK] [get_bd_pins psAxiInterconnect/M00_ACLK] [get_bd_pins psAxiInterconnect/M01_ACLK] [get_bd_pins psAxiInterconnect/M02_ACLK] [get_bd_pins psAxiInterconnect/M03_ACLK] [get_bd_pins psAxiInterconnect/S00_ACLK] [get_bd_pins psInterruptController/s_axi_aclk] [get_bd_pins subprocessorClk/clk_in1] [get_bd_pins subprocessorClk/s_axi_aclk]
   connect_bd_net -net FCLK_CLK1 [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins processing_system7_0/S_AXI_HP2_ACLK]
-  connect_bd_net -net S00_ARESETN_1 [get_bd_pins pico_processor_0/s_axi_aresetn] [get_bd_pins porReset/peripheral_aresetn] [get_bd_pins psAxiInterconnect/M00_ARESETN] [get_bd_pins psAxiInterconnect/M01_ARESETN] [get_bd_pins psAxiInterconnect/M02_ARESETN] [get_bd_pins psAxiInterconnect/S00_ARESETN] [get_bd_pins psInterruptController/s_axi_aresetn] [get_bd_pins subprocessorClk/s_axi_aresetn]
+  connect_bd_net -net M04_ARESETN_1 -boundary_type upper [get_bd_pins pico_processor_0/peripheral_aresetn]
+  connect_bd_net -net S00_ARESETN_1 [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins pico_processor_0/s_axi_aresetn] [get_bd_pins porReset/peripheral_aresetn] [get_bd_pins psAxiInterconnect/M00_ARESETN] [get_bd_pins psAxiInterconnect/M01_ARESETN] [get_bd_pins psAxiInterconnect/M02_ARESETN] [get_bd_pins psAxiInterconnect/M03_ARESETN] [get_bd_pins psAxiInterconnect/S00_ARESETN] [get_bd_pins psInterruptController/s_axi_aresetn] [get_bd_pins subprocessorClk/s_axi_aresetn]
+  connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins xlslice_0/Din]
+  connect_bd_net -net capture_snapshot_0_cap_toggle_dbg [get_bd_ports cap_led_o] [get_bd_pins capture_snapshot_0/cap_toggle_dbg]
   connect_bd_net -net irq [get_bd_pins irqConcat/In0] [get_bd_pins pico_processor_0/irq]
   connect_bd_net -net irqConcat_dout [get_bd_pins irqConcat/dout] [get_bd_pins psInterruptController/intr]
   connect_bd_net -net porReset_interconnect_aresetn [get_bd_pins porReset/interconnect_aresetn] [get_bd_pins psAxiInterconnect/ARESETN]
@@ -871,12 +994,15 @@ proc create_root_design { parentCell } {
   connect_bd_net -net processing_system7_0_GPIO_O [get_bd_pins processing_system7_0/GPIO_O] [get_bd_pins resetSlice/Din]
   connect_bd_net -net psirq [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins psInterruptController/irq]
   connect_bd_net -net riscv_resetn [get_bd_pins pico_processor_0/riscv_resetn] [get_bd_pins resetSlice/Dout]
-  connect_bd_net -net subprocessorClk [get_bd_pins pico_processor_0/riscv_clk] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins subprocessorClk/clk_out1]
+  connect_bd_net -net subprocessorClk [get_bd_pins capture_snapshot_0/clk] [get_bd_pins pico_processor_0/riscv_clk] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins subprocessorClk/clk_out1]
+  connect_bd_net -net xlslice_0_Dout [get_bd_pins capture_snapshot_0/cap_trigger] [get_bd_pins xlslice_0/Dout]
 
   # Create address segments
+  assign_bd_address -offset 0x41200000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force
   assign_bd_address -offset 0x40010000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs pico_processor_0/psBramController/S_AXI/Mem0] -force
   assign_bd_address -offset 0x40020000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs psInterruptController/S_AXI/Reg] -force
   assign_bd_address -offset 0x40001000 -range 0x00001000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs subprocessorClk/s_axi_lite/Reg] -force
+  assign_bd_address -offset 0xC0000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces pico_processor_0/picorv32/mem_axi] [get_bd_addr_segs pico_processor_0/riscvBramController/S_AXI/Mem0] -force
 
 
   # Restore current instance
