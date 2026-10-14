@@ -1,0 +1,6016 @@
+{
+  "1": [
+    {
+      "bit": 0,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 1,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 2,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 3,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 4,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 5,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 6,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 7,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 8,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 9,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 10,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 11,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 12,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 13,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 14,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 15,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 16,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 17,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 18,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 19,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 20,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 21,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 22,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 23,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 24,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 25,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 26,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 27,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 28,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 29,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 30,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 31,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 15
+    }
+  ],
+  "2": [
+    {
+      "bit": 0,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 1,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 2,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 3,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 4,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 5,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 6,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 7,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 8,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 9,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 10,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 11,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 12,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 13,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 14,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 15,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 16,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 17,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 18,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 19,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 20,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 21,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 22,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 23,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 24,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 25,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 26,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 27,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 28,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 29,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 30,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 31,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 14
+    }
+  ],
+  "3": [
+    {
+      "bit": 0,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 1,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 2,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 3,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 4,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 5,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 6,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 7,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 8,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 9,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 10,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 11,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 12,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 13,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 14,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 15,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 16,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 17,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 18,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 19,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 20,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 21,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 22,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 23,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 24,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 25,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 26,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 27,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 28,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 29,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 30,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 31,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 14
+    }
+  ],
+  "4": [
+    {
+      "bit": 0,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 1,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 2,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 3,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 4,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 5,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 6,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 7,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 8,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 9,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 10,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 11,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 12,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 13,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 14,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 15,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 16,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 17,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 18,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 19,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 20,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 21,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 22,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 23,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 24,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 25,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 26,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 27,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 28,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 29,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 30,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 31,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 13
+    }
+  ],
+  "5": [
+    {
+      "bit": 0,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 1,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 2,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 3,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 4,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 5,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 6,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 7,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 8,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 9,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 10,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 11,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 12,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 13,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 14,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 15,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 16,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 17,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 18,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 19,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 20,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 21,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 22,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 23,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 24,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 25,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 26,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 27,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 28,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 29,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 30,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 31,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 13
+    }
+  ],
+  "6": [
+    {
+      "bit": 0,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 1,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 2,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 3,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 4,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 5,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 6,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 7,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 8,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 9,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 10,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 11,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 12,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 13,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 14,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 15,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 16,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 17,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 18,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 19,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 20,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 21,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 22,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 23,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 24,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 25,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 26,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 27,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 28,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 29,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 30,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 31,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 12
+    }
+  ],
+  "7": [
+    {
+      "bit": 0,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 1,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 2,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 3,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 4,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 5,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 6,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 7,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 8,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 9,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 10,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 11,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 12,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 13,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 14,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 15,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 16,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 17,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 18,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 19,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 20,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 21,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 22,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 23,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 24,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 25,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 26,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 27,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 28,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 29,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 30,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 31,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 12
+    }
+  ],
+  "8": [
+    {
+      "bit": 0,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 1,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 2,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 3,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 4,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 5,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 6,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 7,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 8,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 9,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 10,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 11,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 12,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 13,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 14,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 15,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 16,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 17,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 18,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 19,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 20,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 21,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 22,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 23,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 24,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 25,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 26,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 27,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 28,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 29,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 30,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 31,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 15
+    }
+  ],
+  "9": [
+    {
+      "bit": 0,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 1,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 2,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 3,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 4,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 5,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 6,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 7,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 8,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 9,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 10,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 11,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 12,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 13,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 14,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 15,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 16,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 17,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 18,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 19,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 20,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 21,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 22,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 23,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 24,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 25,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 26,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 31
+    },
+    {
+      "bit": 27,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 23
+    },
+    {
+      "bit": 28,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 15
+    },
+    {
+      "bit": 29,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 30,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 7
+    },
+    {
+      "bit": 31,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 15
+    }
+  ],
+  "10": [
+    {
+      "bit": 0,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 1,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 2,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 3,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 4,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 5,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 6,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 7,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 8,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 9,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 10,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 11,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 12,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 13,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 14,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 15,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 16,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 17,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 18,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 19,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 20,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 21,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 22,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 23,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 24,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 25,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 26,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 27,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 28,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 29,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 30,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 31,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 14
+    }
+  ],
+  "11": [
+    {
+      "bit": 0,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 1,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 2,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 3,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 4,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 5,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 6,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 7,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 8,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 9,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 10,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 11,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 12,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 13,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 14,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 15,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 16,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 17,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 18,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 19,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 20,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 21,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 22,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 23,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 24,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 25,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 26,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 30
+    },
+    {
+      "bit": 27,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 22
+    },
+    {
+      "bit": 28,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 14
+    },
+    {
+      "bit": 29,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 30,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 6
+    },
+    {
+      "bit": 31,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 14
+    }
+  ],
+  "12": [
+    {
+      "bit": 0,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 1,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 2,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 3,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 4,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 5,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 6,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 7,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 8,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 9,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 10,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 11,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 12,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 13,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 14,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 15,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 16,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 17,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 18,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 19,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 20,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 21,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 22,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 23,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 24,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 25,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 26,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 27,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 28,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 29,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 30,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 31,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 13
+    }
+  ],
+  "13": [
+    {
+      "bit": 0,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 1,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 2,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 3,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 4,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 5,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 6,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 7,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 8,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 9,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 10,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 11,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 12,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 13,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 14,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 15,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 16,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 17,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 18,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 19,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 20,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 21,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 22,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 23,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 24,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 25,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 26,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 29
+    },
+    {
+      "bit": 27,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 21
+    },
+    {
+      "bit": 28,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 13
+    },
+    {
+      "bit": 29,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 30,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 5
+    },
+    {
+      "bit": 31,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 13
+    }
+  ],
+  "14": [
+    {
+      "bit": 0,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 1,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 2,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 3,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 4,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 5,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 6,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 7,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 8,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 9,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 10,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 11,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 12,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 13,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 14,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 15,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 16,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 17,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 18,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 19,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 20,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 21,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 22,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 23,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 24,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 25,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 26,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 27,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 28,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 29,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 30,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 31,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 12
+    }
+  ],
+  "15": [
+    {
+      "bit": 0,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 1,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 2,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 3,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 4,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 5,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 6,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 7,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 8,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 9,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 10,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 11,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 12,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 13,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 14,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 15,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 16,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 17,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 18,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 19,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 20,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 21,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 22,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 23,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 24,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 25,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 26,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 28
+    },
+    {
+      "bit": 27,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 20
+    },
+    {
+      "bit": 28,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 12
+    },
+    {
+      "bit": 29,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 30,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 4
+    },
+    {
+      "bit": 31,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 12
+    }
+  ],
+  "16": [
+    {
+      "bit": 0,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 1,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 2,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 3,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 4,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 5,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 6,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 7,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 8,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 9,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 10,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 11,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 12,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 13,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 14,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 15,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 16,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 17,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 18,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 19,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 20,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 21,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 22,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 23,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 24,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 25,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 26,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 27,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 28,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 29,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 30,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 31,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 11
+    }
+  ],
+  "17": [
+    {
+      "bit": 0,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 1,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 2,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 3,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 4,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 5,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 6,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 7,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 8,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 9,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 10,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 11,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 12,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 13,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 14,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 15,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 16,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 17,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 18,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 19,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 20,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 21,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 22,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 23,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 24,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 25,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 26,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 27,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 28,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 29,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 30,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 31,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 11
+    }
+  ],
+  "18": [
+    {
+      "bit": 0,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 1,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 2,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 3,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 4,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 5,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 6,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 7,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 8,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 9,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 10,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 11,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 12,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 13,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 14,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 15,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 16,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 17,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 18,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 19,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 20,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 21,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 22,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 23,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 24,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 25,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 26,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 27,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 28,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 29,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 30,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 31,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 10
+    }
+  ],
+  "19": [
+    {
+      "bit": 0,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 1,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 2,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 3,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 4,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 5,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 6,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 7,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 8,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 9,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 10,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 11,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 12,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 13,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 14,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 15,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 16,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 17,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 18,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 19,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 20,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 21,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 22,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 23,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 24,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 25,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 26,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 27,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 28,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 29,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 30,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 31,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 10
+    }
+  ],
+  "20": [
+    {
+      "bit": 0,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 1,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 2,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 3,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 4,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 5,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 6,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 7,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 8,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 9,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 10,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 11,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 12,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 13,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 14,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 15,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 16,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 17,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 18,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 19,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 20,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 21,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 22,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 23,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 24,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 25,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 26,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 27,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 28,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 29,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 30,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 31,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 9
+    }
+  ],
+  "21": [
+    {
+      "bit": 0,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 1,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 2,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 3,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 4,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 5,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 6,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 7,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 8,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 9,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 10,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 11,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 12,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 13,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 14,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 15,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 16,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 17,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 18,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 19,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 20,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 21,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 22,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 23,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 24,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 25,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 26,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 27,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 28,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 29,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 30,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 31,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 9
+    }
+  ],
+  "22": [
+    {
+      "bit": 0,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 1,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 2,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 3,
+      "FAR": 4197666,
+      "word": 22,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 4,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 5,
+      "FAR": 4197666,
+      "word": 23,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 6,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 7,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 8,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 9,
+      "FAR": 4197794,
+      "word": 26,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 10,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 11,
+      "FAR": 4197794,
+      "word": 27,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 12,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 13,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 14,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 15,
+      "FAR": 4197666,
+      "word": 26,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 16,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 17,
+      "FAR": 4197666,
+      "word": 27,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 18,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 19,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 20,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 21,
+      "FAR": 4197666,
+      "word": 28,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 22,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 23,
+      "FAR": 4197666,
+      "word": 29,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 24,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 25,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 26,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 27,
+      "FAR": 4197666,
+      "word": 32,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 28,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 29,
+      "FAR": 4197666,
+      "word": 33,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 30,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 31,
+      "FAR": 4197794,
+      "word": 31,
+      "bit_in_word": 8
+    }
+  ],
+  "23": [
+    {
+      "bit": 0,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 1,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 2,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 3,
+      "FAR": 4197667,
+      "word": 22,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 4,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 5,
+      "FAR": 4197667,
+      "word": 23,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 6,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 7,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 8,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 9,
+      "FAR": 4197795,
+      "word": 26,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 10,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 11,
+      "FAR": 4197795,
+      "word": 27,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 12,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 13,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 14,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 15,
+      "FAR": 4197667,
+      "word": 26,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 16,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 17,
+      "FAR": 4197667,
+      "word": 27,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 18,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 19,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 20,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 21,
+      "FAR": 4197667,
+      "word": 28,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 22,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 23,
+      "FAR": 4197667,
+      "word": 29,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 24,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 25,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 26,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 27,
+      "FAR": 4197667,
+      "word": 32,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 28,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 29,
+      "FAR": 4197667,
+      "word": 33,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 30,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 31,
+      "FAR": 4197795,
+      "word": 31,
+      "bit_in_word": 8
+    }
+  ],
+  "24": [
+    {
+      "bit": 0,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 1,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 2,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 3,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 4,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 5,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 6,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 7,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 8,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 9,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 10,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 11,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 12,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 13,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 14,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 15,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 16,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 17,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 18,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 19,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 20,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 21,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 22,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 23,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 24,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 25,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 26,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 27,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 28,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 29,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 30,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 31,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 11
+    }
+  ],
+  "25": [
+    {
+      "bit": 0,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 1,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 2,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 3,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 4,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 5,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 6,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 7,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 8,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 9,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 10,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 11,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 12,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 13,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 14,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 15,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 16,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 17,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 18,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 19,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 20,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 21,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 22,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 23,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 24,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 25,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 26,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 27
+    },
+    {
+      "bit": 27,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 19
+    },
+    {
+      "bit": 28,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 11
+    },
+    {
+      "bit": 29,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 30,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 3
+    },
+    {
+      "bit": 31,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 11
+    }
+  ],
+  "26": [
+    {
+      "bit": 0,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 1,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 2,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 3,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 4,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 5,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 6,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 7,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 8,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 9,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 10,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 11,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 12,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 13,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 14,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 15,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 16,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 17,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 18,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 19,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 20,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 21,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 22,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 23,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 24,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 25,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 26,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 27,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 28,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 29,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 30,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 31,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 10
+    }
+  ],
+  "27": [
+    {
+      "bit": 0,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 1,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 2,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 3,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 4,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 5,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 6,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 7,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 8,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 9,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 10,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 11,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 12,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 13,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 14,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 15,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 16,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 17,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 18,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 19,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 20,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 21,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 22,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 23,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 24,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 25,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 26,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 26
+    },
+    {
+      "bit": 27,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 18
+    },
+    {
+      "bit": 28,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 10
+    },
+    {
+      "bit": 29,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 30,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 2
+    },
+    {
+      "bit": 31,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 10
+    }
+  ],
+  "28": [
+    {
+      "bit": 0,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 1,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 2,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 3,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 4,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 5,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 6,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 7,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 8,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 9,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 10,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 11,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 12,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 13,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 14,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 15,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 16,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 17,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 18,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 19,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 20,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 21,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 22,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 23,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 24,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 25,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 26,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 27,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 28,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 29,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 30,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 31,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 9
+    }
+  ],
+  "29": [
+    {
+      "bit": 0,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 1,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 2,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 3,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 4,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 5,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 6,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 7,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 8,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 9,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 10,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 11,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 12,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 13,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 14,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 15,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 16,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 17,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 18,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 19,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 20,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 21,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 22,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 23,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 24,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 25,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 26,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 25
+    },
+    {
+      "bit": 27,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 17
+    },
+    {
+      "bit": 28,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 9
+    },
+    {
+      "bit": 29,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 30,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 1
+    },
+    {
+      "bit": 31,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 9
+    }
+  ],
+  "30": [
+    {
+      "bit": 0,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 1,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 2,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 3,
+      "FAR": 4197664,
+      "word": 22,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 4,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 5,
+      "FAR": 4197664,
+      "word": 23,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 6,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 7,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 8,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 9,
+      "FAR": 4197792,
+      "word": 26,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 10,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 11,
+      "FAR": 4197792,
+      "word": 27,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 12,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 13,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 14,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 15,
+      "FAR": 4197664,
+      "word": 26,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 16,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 17,
+      "FAR": 4197664,
+      "word": 27,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 18,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 19,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 20,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 21,
+      "FAR": 4197664,
+      "word": 28,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 22,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 23,
+      "FAR": 4197664,
+      "word": 29,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 24,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 25,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 26,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 27,
+      "FAR": 4197664,
+      "word": 32,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 28,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 29,
+      "FAR": 4197664,
+      "word": 33,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 30,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 31,
+      "FAR": 4197792,
+      "word": 31,
+      "bit_in_word": 8
+    }
+  ],
+  "31": [
+    {
+      "bit": 0,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 1,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 2,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 3,
+      "FAR": 4197665,
+      "word": 22,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 4,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 5,
+      "FAR": 4197665,
+      "word": 23,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 6,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 7,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 8,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 9,
+      "FAR": 4197793,
+      "word": 26,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 10,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 11,
+      "FAR": 4197793,
+      "word": 27,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 12,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 13,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 14,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 15,
+      "FAR": 4197665,
+      "word": 26,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 16,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 17,
+      "FAR": 4197665,
+      "word": 27,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 18,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 19,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 20,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 21,
+      "FAR": 4197665,
+      "word": 28,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 22,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 23,
+      "FAR": 4197665,
+      "word": 29,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 24,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 25,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 26,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 24
+    },
+    {
+      "bit": 27,
+      "FAR": 4197665,
+      "word": 32,
+      "bit_in_word": 16
+    },
+    {
+      "bit": 28,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 8
+    },
+    {
+      "bit": 29,
+      "FAR": 4197665,
+      "word": 33,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 30,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 0
+    },
+    {
+      "bit": 31,
+      "FAR": 4197793,
+      "word": 31,
+      "bit_in_word": 8
+    }
+  ]
+}

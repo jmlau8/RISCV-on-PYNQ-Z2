@@ -1,0 +1,281 @@
+[
+ {
+  "bit": 1,
+  "FAR": 4197407,
+  "word": 26,
+  "bit_in_word": 4,
+  "offset": 836,
+  "block": "SLICE_X35Y63",
+  "latch": "AQ"
+ },
+ {
+  "bit": 2,
+  "FAR": 4197407,
+  "word": 26,
+  "bit_in_word": 29,
+  "offset": 861,
+  "block": "SLICE_X35Y63",
+  "latch": "BQ"
+ },
+ {
+  "bit": 3,
+  "FAR": 4197407,
+  "word": 27,
+  "bit_in_word": 2,
+  "offset": 866,
+  "block": "SLICE_X35Y63",
+  "latch": "CQ"
+ },
+ {
+  "bit": 4,
+  "FAR": 4197407,
+  "word": 27,
+  "bit_in_word": 27,
+  "offset": 891,
+  "block": "SLICE_X35Y63",
+  "latch": "DQ"
+ },
+ {
+  "bit": 5,
+  "FAR": 4197407,
+  "word": 28,
+  "bit_in_word": 3,
+  "offset": 899,
+  "block": "SLICE_X34Y64",
+  "latch": "AQ"
+ },
+ {
+  "bit": 6,
+  "FAR": 4197919,
+  "word": 35,
+  "bit_in_word": 26,
+  "offset": 1146,
+  "block": "SLICE_X40Y67",
+  "latch": "DQ"
+ },
+ {
+  "bit": 7,
+  "FAR": 4197919,
+  "word": 37,
+  "bit_in_word": 26,
+  "offset": 1210,
+  "block": "SLICE_X40Y68",
+  "latch": "DQ"
+ },
+ {
+  "bit": 8,
+  "FAR": 4197919,
+  "word": 37,
+  "bit_in_word": 2,
+  "offset": 1186,
+  "block": "SLICE_X41Y68",
+  "latch": "CQ"
+ },
+ {
+  "bit": 9,
+  "FAR": 4197919,
+  "word": 37,
+  "bit_in_word": 27,
+  "offset": 1211,
+  "block": "SLICE_X41Y68",
+  "latch": "DQ"
+ },
+ {
+  "bit": 10,
+  "FAR": 4197919,
+  "word": 34,
+  "bit_in_word": 3,
+  "offset": 1091,
+  "block": "SLICE_X40Y67",
+  "latch": "AQ"
+ },
+ {
+  "bit": 11,
+  "FAR": 4197919,
+  "word": 36,
+  "bit_in_word": 3,
+  "offset": 1155,
+  "block": "SLICE_X40Y68",
+  "latch": "AQ"
+ },
+ {
+  "bit": 12,
+  "FAR": 4197919,
+  "word": 36,
+  "bit_in_word": 4,
+  "offset": 1156,
+  "block": "SLICE_X41Y68",
+  "latch": "AQ"
+ },
+ {
+  "bit": 13,
+  "FAR": 4197919,
+  "word": 38,
+  "bit_in_word": 4,
+  "offset": 1220,
+  "block": "SLICE_X41Y69",
+  "latch": "AQ"
+ },
+ {
+  "bit": 14,
+  "FAR": 4197919,
+  "word": 36,
+  "bit_in_word": 28,
+  "offset": 1180,
+  "block": "SLICE_X40Y68",
+  "latch": "BQ"
+ },
+ {
+  "bit": 15,
+  "FAR": 4197919,
+  "word": 34,
+  "bit_in_word": 28,
+  "offset": 1116,
+  "block": "SLICE_X40Y67",
+  "latch": "BQ"
+ },
+ {
+  "bit": 16,
+  "FAR": 4197919,
+  "word": 35,
+  "bit_in_word": 1,
+  "offset": 1121,
+  "block": "SLICE_X40Y67",
+  "latch": "CQ"
+ },
+ {
+  "bit": 17,
+  "FAR": 4197919,
+  "word": 36,
+  "bit_in_word": 29,
+  "offset": 1181,
+  "block": "SLICE_X41Y68",
+  "latch": "BQ"
+ },
+ {
+  "bit": 18,
+  "FAR": 4197919,
+  "word": 37,
+  "bit_in_word": 1,
+  "offset": 1185,
+  "block": "SLICE_X40Y68",
+  "latch": "CQ"
+ },
+ {
+  "bit": 19,
+  "FAR": 4197919,
+  "word": 38,
+  "bit_in_word": 23,
+  "offset": 1239,
+  "block": "SLICE_X41Y69",
+  "latch": "B5FF.Q"
+ },
+ {
+  "bit": 20,
+  "FAR": 4197791,
+  "word": 36,
+  "bit_in_word": 29,
+  "offset": 1181,
+  "block": "SLICE_X39Y68",
+  "latch": "BQ"
+ },
+ {
+  "bit": 21,
+  "FAR": 4197663,
+  "word": 38,
+  "bit_in_word": 29,
+  "offset": 1245,
+  "block": "SLICE_X37Y69",
+  "latch": "BQ"
+ },
+ {
+  "bit": 22,
+  "FAR": 4197663,
+  "word": 39,
+  "bit_in_word": 2,
+  "offset": 1250,
+  "block": "SLICE_X37Y69",
+  "latch": "CQ"
+ },
+ {
+  "bit": 23,
+  "FAR": 4197919,
+  "word": 38,
+  "bit_in_word": 29,
+  "offset": 1245,
+  "block": "SLICE_X41Y69",
+  "latch": "BQ"
+ },
+ {
+  "bit": 24,
+  "FAR": 4197919,
+  "word": 39,
+  "bit_in_word": 2,
+  "offset": 1250,
+  "block": "SLICE_X41Y69",
+  "latch": "CQ"
+ },
+ {
+  "bit": 25,
+  "FAR": 4197791,
+  "word": 40,
+  "bit_in_word": 3,
+  "offset": 1283,
+  "block": "SLICE_X38Y70",
+  "latch": "AQ"
+ },
+ {
+  "bit": 26,
+  "FAR": 4197791,
+  "word": 40,
+  "bit_in_word": 28,
+  "offset": 1308,
+  "block": "SLICE_X38Y70",
+  "latch": "BQ"
+ },
+ {
+  "bit": 27,
+  "FAR": 4197791,
+  "word": 41,
+  "bit_in_word": 1,
+  "offset": 1313,
+  "block": "SLICE_X38Y70",
+  "latch": "CQ"
+ },
+ {
+  "bit": 28,
+  "FAR": 4197663,
+  "word": 40,
+  "bit_in_word": 4,
+  "offset": 1284,
+  "block": "SLICE_X37Y70",
+  "latch": "AQ"
+ },
+ {
+  "bit": 29,
+  "FAR": 4197663,
+  "word": 40,
+  "bit_in_word": 29,
+  "offset": 1309,
+  "block": "SLICE_X37Y70",
+  "latch": "BQ"
+ },
+ {
+  "bit": 30,
+  "FAR": 4197663,
+  "word": 41,
+  "bit_in_word": 2,
+  "offset": 1314,
+  "block": "SLICE_X37Y70",
+  "latch": "CQ"
+ },
+ {
+  "bit": 31,
+  "FAR": 4197791,
+  "word": 41,
+  "bit_in_word": 26,
+  "offset": 1338,
+  "block": "SLICE_X38Y70",
+  "latch": "DQ"
+ }
+]
