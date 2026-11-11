@@ -136,17 +136,27 @@ def main():
                    "ISS (check the workload image, reset state, or whether the checkpoint "
                    "instruction count is right)")
 
+    pc_iss = cp.get("pc_iss")
     if not pc_ok["bitstream_pc"]:
-        verdict = ("PC differs: the checkpoint says 0x%08x but the RTL replay is at 0x%08x after %d "
-                   "instructions (wrong workload image, wrong instr_count, or the PC itself is the "
-                   "fault). Register comparison: %s"
-                   % (cp["pc"], hit["pc"], hit["n"], verdict))
+        if pc_iss is not None and pc_iss == hit["pc"]:
+            verdict = ("PC: hardware deviates. The RTL replay and the ISS are both at 0x%08x after "
+                       "%d instructions but the board's PC is 0x%08x. Register comparison: %s"
+                       % (hit["pc"], hit["n"], cp["pc"], verdict))
+        else:
+            verdict = ("PC differs: the checkpoint says 0x%08x but the RTL replay is at 0x%08x after %d "
+                       "instructions (wrong workload image, wrong instr_count, or the PC itself is the "
+                       "fault). Register comparison: %s"
+                       % (cp["pc"], hit["pc"], hit["n"], verdict))
+    elif pc_iss is not None and pc_iss != hit["pc"]:
+        verdict = ("PC: ISS deviates. The board and the RTL replay are at 0x%08x but the ISS says "
+                   "0x%08x. Register comparison: %s" % (hit["pc"], pc_iss, verdict))
 
     report = {
         "checkpoint_id": cp["checkpoint_id"],
         "instructions_completed": hit["n"],
         "pc_rtl": "0x%08x" % hit["pc"],
         "pc_checkpoint": "0x%08x" % cp["pc"],
+        "pc_iss": ("0x%08x" % pc_iss) if pc_iss is not None else None,
         "pc_matches": pc_ok["bitstream_pc"],
         "instruction_rtl": disasm(hit["insn"]),
         "instruction_checkpoint": cp["instruction"],

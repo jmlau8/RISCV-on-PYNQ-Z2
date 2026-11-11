@@ -70,8 +70,11 @@ def _regs_from_json(d):
 
 
 def write_checkpoint(path, checkpoint_id, pc, instruction, regs_bitstream, regs_iss,
-                     instr_count=None):
-    """regs_*: dicts {0..31: int}. Writes the checkpoint JSON file."""
+                     instr_count=None, pc_iss=None):
+    """regs_*: dicts {0..31: int}. Writes the checkpoint JSON file.
+
+    `pc` is the bitstream's (board's) PC. `pc_iss` (optional) is the ISS's PC at the same
+    instruction count; the arbiter records it so a PC-only mismatch is visible."""
     doc = {
         "checkpoint_id": int(checkpoint_id),
         "pc": _hex32(pc),
@@ -81,6 +84,8 @@ def write_checkpoint(path, checkpoint_id, pc, instruction, regs_bitstream, regs_
     }
     if instr_count is not None:
         doc["instr_count"] = int(instr_count)
+    if pc_iss is not None:
+        doc["pc_iss"] = _hex32(pc_iss)
     with open(path, "w") as f:
         json.dump(doc, f, indent=2)
         f.write("\n")
@@ -101,6 +106,7 @@ def load_checkpoint(path):
         "pc": int(doc["pc"], 16),
         "instruction": doc["instruction"],
         "instr_count": int(doc["instr_count"]) if "instr_count" in doc else None,
+        "pc_iss": int(doc["pc_iss"], 16) if "pc_iss" in doc else None,
         "gpr_bitstream": hw,
         "gpr_iss": iss,
         "mismatch": [i for i in range(NUM_REGS) if hw[i] != iss[i]],

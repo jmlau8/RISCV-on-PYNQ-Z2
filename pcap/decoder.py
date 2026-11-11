@@ -12,6 +12,7 @@ Derived from:
     bit is flipped here (LUTRAM register bits are not inverted).
 
 Needs, next to this file: full_decoder_table.json, pc_decoder_table.json
+(or the *_step.json pair when the environment variable DECODER_SUFFIX=_step is set before import)
 
 Usage:
     from decoder import ALL_FARS, PC_FARS, STATE_FARS, \
@@ -34,13 +35,17 @@ import os
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 
-with open(os.path.join(_HERE, "full_decoder_table.json")) as f:
+# DECODER_SUFFIX selects another table set, e.g. "_step" for full_decoder_table_step.json /
+# pc_decoder_table_step.json (the bitstream with the PL step/pause block). Default: the original tables.
+_SUFFIX = os.environ.get("DECODER_SUFFIX", "")
+
+with open(os.path.join(_HERE, "full_decoder_table%s.json" % _SUFFIX)) as f:
     _RAW_TABLE = json.load(f)
 # JSON keys are strings; convert register numbers back to int
 DECODER_TABLE = {int(reg): entries for reg, entries in _RAW_TABLE.items()}
 ALL_FARS = sorted(set(e["FAR"] for entries in DECODER_TABLE.values() for e in entries))
 
-with open(os.path.join(_HERE, "pc_decoder_table.json")) as f:
+with open(os.path.join(_HERE, "pc_decoder_table%s.json" % _SUFFIX)) as f:
     PC_TABLE = json.load(f)   # list of {bit, FAR, word, bit_in_word, ...}
 PC_FARS = sorted(set(e["FAR"] for e in PC_TABLE))
 

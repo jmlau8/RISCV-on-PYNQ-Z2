@@ -103,7 +103,11 @@ def _le_hex(v):
 
 class QemuState:
     def __init__(self, image, ram_base=RAM_BASE, rebase=True, qemu="qemu-system-riscv32",
-                 port=None, entry=None):
+                 port=None, entry=None, fast=None):
+        # fast=True needs a QEMU patched with the "qferiver.run:<N>" gdb command (qemu_patch/) and runs it with
+        # -icount shift=0; state_at() then jumps N instructions in ONE packet instead of N single steps.
+        # Default: on when the environment variable FERIVER_FAST_QEMU=1.
+        self.fast = (os.environ.get("FERIVER_FAST_QEMU") == "1") if fast is None else fast
         self.image = os.path.abspath(image)
         self.ram_base = ram_base
         self.rebase = rebase
@@ -125,6 +129,8 @@ class QemuState:
                 self.port = t.getsockname()[1]
         args = [self.qemu, "-M", "virt", "-bios", "none", "-nographic", "-monitor", "none",
                 "-serial", "none", "-S", "-gdb", "tcp:127.0.0.1:%d" % self.port]
+        if self.fast:
+            args += ["-icount", "shift=0,sleep=off"]
         if self.image.lower().endswith((".elf", ".out")) or self._is_elf(self.image):
             args += ["-kernel", self.image]
         else:       # flat binary linked at ram_base
@@ -208,6 +214,11 @@ class QemuState:
     def state_at(self, n):
         if n < self.n:
             raise ValueError("can only move forward: at %d, asked for %d" % (self.n, n))
+        if self.fast and n - self.n > 1:
+            r = self.gdb.command("qferiver.run:%x" % (n - self.n))
+            if not r or r[0] != "T":
+                raise RuntimeError("fast run failed (QEMU without the qferiver.run patch?): %r" % r)
+            self.n = n
         while self.n < n:
             self._step()
             self.n += 1
